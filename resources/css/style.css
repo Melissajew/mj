@@ -1,0 +1,192 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  vertical-align: baseline;
+}
+
+.main-content {
+  position: relative;
+  /* top: 0.1rem; To offset for fixed header. */
+}
+
+.center {
+  text-align: center;
+}
+
+/* .button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  opacity: .8;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+/* Header */
+
+header {
+  height: 2rem;
+  width: 100%;
+  opacity: 0.8
+}
+
+header .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  flex-shrink: 1;
+  /* color: #4a4a4a; */
+  color: black;
+  font-weight: bold;
+  font-family: 'Helvetica', sans-serif;
+}
+
+header nav ul {
+  display: flex;
+}
+
+
+/* Banner Section */
+#intro-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 45.5rem;
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/19/10/47/e-mail-3239670_1280.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#banner-header {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 5rem 2.5rem 5rem;
+  position: relative;
+  top: 300px;
+}
+
+#intro-section #banner-header {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.banner {
+  opacity: 0.84;
+}
+
+.banner .content {
+  width: 25.625rem;
+  font-family: "Helvetica", sans-serif,
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* About Me Section */
+#about-section {
+  display: flex;
+  height: 35rem;
+  width: 100%;
+}
+
+#about-section .center{
+  display: flex;
+  align-items: center;
+
+}
+
+#about-section img {
+  width: 28rem;
+  margin: 0 10rem;
+}
+
+/* Featured Section */
+#featured-section {
+  height: 40rem;
+}
+
+
+/* Farewell Section */
+#farewell-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 50rem;
+  width: 100%;
+  background-color: black;
+}
+
+#farewell-section .headline {
+  white-space: nowrap;
+  color: white;
+}
+
+#farewell-section #banner-header {
+  top: 365px;
+}
+
+#farewell-section .content {
+    width: 35rem;;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  padding: 1.4rem 2rem;
+  opacity: .9;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .content {
+  color: white;
+  font-size: 0.75rem;
+}
