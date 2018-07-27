@@ -6,46 +6,19 @@ html {
   vertical-align: baseline;
 }
 
-.main-content {
-  position: relative;
-  /* top: 0.1rem; To offset for fixed header. */
-}
-
-.center {
-  text-align: center;
-}
-
-/* .button {
-  border-radius: 4px;
-  background-color: #4a4a4a;
-  color: white;
-} */
-
-.container {
-    display: flex;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-}
-
-.image-container {
-  overflow: hidden;
-}
-
-.image-container img {
-  display: block;
-}
 
 h1{
   font-size: 5rem;
 }
 
 h2{
-  font-size: 2rem;
+  font-family: Helvetica cursive;
+  font-size: 2.5rem;
 }
 
 h3{
   font-size: 1.5rem;
-  opacity: .8;
+
 }
 
 h4{
@@ -56,6 +29,16 @@ nav li {
   padding-left: 3.5rem;
 }
 
+/* @media only screen and (max-width: 500px) {
+  header .content {
+    justify-content: center;
+    padding: 0;
+}
+
+} */
+
+/* TODO:  center nav on top and bottom*/
+
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
@@ -63,12 +46,34 @@ nav a {
   color: #4a4a4a;
 }
 
+.image-container {
+  overflow: hidden;
+  /* display: block; */
+}
+
+.main-content {
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Header */
 
 header {
   height: 2rem;
   width: 100%;
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 header .content {
@@ -77,7 +82,6 @@ header .content {
   align-items: center;
   padding: 0 1rem;
   flex-shrink: 1;
-  /* color: #4a4a4a; */
   color: black;
   font-weight: bold;
   font-family: 'Helvetica', sans-serif;
@@ -102,12 +106,30 @@ header nav ul {
 
 }
 
+@media only screen and (max-width: 500px) {
+  #intro-section {
+    background-position: center;
+    justify-content: center;
+    /* height: 20rem; */
+    /* TODO: fix banner for mobile purposes. figure out how to center the headline */
+
+
+  }
+
+  #banner-header {
+
+  }
+
+  /* KEEP THIS OR A CURSE WILL BEFALL YOU */
+}
+
+
 #banner-header {
   position: relative;
   margin: 0 auto;
   padding: 0 5rem 2.5rem 5rem;
   position: relative;
-  top: 300px;
+  top: 18rem;
 }
 
 #intro-section #banner-header {
@@ -129,26 +151,111 @@ header nav ul {
 /* About Me Section */
 #about-section {
   display: flex;
-  height: 35rem;
+  height: 50rem;
   width: 100%;
+  padding-top: 3rem;
 }
 
-#about-section .center{
+#about-section .center {
   display: flex;
   align-items: center;
+  width: 100%;
 
 }
 
 #about-section img {
   width: 28rem;
-  margin: 0 10rem;
+  /* margin: 0 10rem; */
+  /* TODO: half half, image on one side and text on the other. image will half this margin */
 }
+
+#about-section h2 {
+  padding-top: 1rem;
+  line-height: 2.2rem;
+}
+
+#about-section p {
+  margin: 0 20rem;
+  line-height: 1.5rem;
+}
+
+.about {
+  /* text-align: left; */
+  /* TODO: edit this later to show half half */
+  align-items: center;
+}
+
+.about h2 {
+  font-family: Helvetica cursive;
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  #about-section {
+    padding-top: 3rem;
+  }
+
+  #about-section p {
+    margin: 0 5rem;
+  }
+}
+
+
 
 /* Featured Section */
 #featured-section {
-  height: 40rem;
+  height: 38rem;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 6rem;
 }
 
+.text {
+  line-height: 3rem;
+}
+
+.container .sites {
+  display: flex;
+}
+
+.site span {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.site img {
+  /* display: block; */
+  height: 13rem;
+  width: 21rem;
+  padding: 0.5rem;
+}
+
+.image-container a, span {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  #featured-section {
+    padding: 0;
+    height: auto;
+  }
+
+  /* Fixed my featured works fiasco by creating a new div called sites and each item with site then creating a media with the sites div defined as column and the featured section with the height of auto. */
+
+  .sites {
+    flex-direction: column;
+  }
+
+  #featured-section h2 {
+    padding-top: 3rem;
+  }
+
+}
 
 /* Farewell Section */
 #farewell-section {
@@ -158,20 +265,35 @@ header nav ul {
   height: 50rem;
   width: 100%;
   background-color: black;
+  font-family: 'Amatic SC', cursive;;
 }
 
 #farewell-section .headline {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   color: white;
+  line-height: 3rem;
 }
 
+
 #farewell-section #banner-header {
-  top: 365px;
+  top: 45%;
 }
 
 #farewell-section .content {
-    width: 35rem;;
+    width: 35rem;
 }
+
+@media only screen and (max-width: 500px) {
+  #farewell-section h2 {
+    font-size: 2rem;
+}
+
+  #farewell-section h3 {
+  font-size: 1rem;
+}
+
+}
+
 
 /* Footer */
 
@@ -190,3 +312,12 @@ footer .content {
   color: white;
   font-size: 0.75rem;
 }
+
+/* @media only screen and (max-width: 500px) {
+
+  footer ul {
+    justify-content: center;
+  }
+
+} */
+/* TODO: center this */
