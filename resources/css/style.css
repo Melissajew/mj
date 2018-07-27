@@ -189,6 +189,8 @@ header nav ul {
   font-family: Helvetica cursive;
   padding-bottom: 2rem;
   line-height: 1.5rem;
+  align-items: center;
+  /* just added this before final */
 }
 
 @media only screen and (max-width: 500px) {
@@ -201,7 +203,7 @@ header nav ul {
   }
 
   #banner-header {
-    padding: 0 1.2rem 2.5rem 1.2rem;
+    padding: 0 1rem 2.5rem 1rem;
   }
 }
 
