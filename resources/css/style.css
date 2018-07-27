@@ -203,7 +203,11 @@ header nav ul {
   }
 
   #banner-header {
-    /* padding: 0 1rem 2.5rem 1rem; */
+    width: 100%;
+  }
+
+  #about-section img {
+    width: 100%;
   }
 }
 
