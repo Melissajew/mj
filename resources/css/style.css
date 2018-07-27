@@ -116,9 +116,9 @@ header nav ul {
 
   }
 
-  #banner-header {
-
-  }
+  /* #banner-header {
+    margin: 0 auto;
+  } */
 
   /* KEEP THIS OR A CURSE WILL BEFALL YOU */
 }
@@ -198,6 +198,10 @@ header nav ul {
 
   #about-section p {
     margin: 0 5rem;
+  }
+
+  #banner-header {
+    padding: 0 1.5rem 2.5rem 1.5rem;
   }
 }
 
